@@ -17,6 +17,7 @@ import { ODataProcessor, ODataProcessorOptions, ODataMetadataType } from "./proc
 import { HttpRequestError, UnsupportedMediaTypeError } from "./error";
 import { ContainerBase } from "./edm";
 import { Readable, Writable } from "stream";
+import * as qs from "qs";
 
 /** HTTP context interface when using the server HTTP request handler */
 export interface ODataHttpContext{

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "declaration": false,
+    "declaration": true,
     "experimentalDecorators": true,
     "outDir": "build",
     "noUnusedLocals": false,
