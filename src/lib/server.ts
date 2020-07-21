@@ -80,7 +80,7 @@ export class ODataServerBase extends Transform{
     static connector:IODataConnector
     static validator:(odataQuery:string | Token) => null;
     static errorHandler:express.ErrorRequestHandler = ODataErrorHandler;
-    private serverType:typeof ODataServer
+    private serverType:typeof ODataServer;
 
     static requestHandler(){
         return (req:express.Request, res:express.Response, next:express.NextFunction) => {
