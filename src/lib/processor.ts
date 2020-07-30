@@ -463,6 +463,8 @@ export class ODataProcessor extends Transform {
         this.options = options || <ODataProcessorOptions>{};
 
         let method = this.method = context.method.toLowerCase();
+        if(method === "OPTIONS")
+            method = "GET";
         if (ODataRequestMethods.indexOf(method) < 0) throw new MethodNotAllowedError();
 
         context.url = decodeURIComponent(context.url);
