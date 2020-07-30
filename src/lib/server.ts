@@ -271,7 +271,7 @@ export class ODataServerBase extends Transform{
             next();
         });
         router.use(bodyParser.json());
-        if ((<any>server).cors) router.use(cors({preflightContinue: true));
+        if ((<any>server).cors) router.use(cors({preflightContinue: true}));
         router.use((req, res, next) => {
             res.setHeader("OData-Version", "4.0");
             if (req.headers.accept &&
