@@ -81,7 +81,7 @@
     "deepmerge": "^2.1.1",
     "express": "^4.16.3",
     "odata-v4-literal": "^0.1.1",
-    "odata-v4-metadata": "^0.1.5",
+    "odata-v4-metadata": "git+https://github.com/Mabenan/odata-v4-metadata",
     "odata-v4-parser": "^0.1.29",
     "odata-v4-service-document": "0.0.3",
     "odata-v4-service-metadata": "^0.1.6",
